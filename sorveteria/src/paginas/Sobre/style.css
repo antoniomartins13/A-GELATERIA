@@ -1,0 +1,83 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-banner-sobre{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+    background: url("../../../public/assets/banner-sobre.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-banner-sobre div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.secao-banner-sobre h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.conteudo-sobre{
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.conteudo-sobre h2{
+    font-size: 30px;
+}
+
+.conteudo-sobre span{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.conteudo-sobre p{
+    line-height: 25px;
+    margin: 40px 0;
+}
+
+.imagens-sobre{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagens-sobre img{
+    width: 50%;
+    object-fit: cover;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .secao-banner-sobre h1{
+        font-size: 60px;
+    }
+    .imagens-sobre{
+        flex-direction: column;
+    }
+    .imagens-sobre img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .secao-banner-sobre h1{
+        font-size: 40px;
+    }
+}

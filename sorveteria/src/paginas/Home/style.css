@@ -1,0 +1,114 @@
+.secao-banner-home{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: url("../../../public/assets/banner-home.png"), rgb(255, 230, 88);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.secao-banner-home div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.secao-banner-home h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.conteudo img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo div{
+    width: 50%;
+    height: 100%;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo h2{
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.conteudo span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.conteudo p{
+    padding: 0 100px;
+    line-height: 26px;
+    margin: 40px 0;
+    text-align: left;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .conteudo p{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao-banner-home h1 {
+        font-size: 60px;
+    }
+    .secao-sabores{
+        flex-direction: column;
+        align-items: center;
+    }
+    .secao-eventos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .secao-sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo{
+        height: auto;
+    }
+    .conteudo img{
+        width: 100%;
+        height: auto;
+    }
+    .conteudo div{
+        width: 100%;
+        padding: 100px 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .secao-banner-home h1{
+        font-size: 40px;
+    }
+    .conteudo h2{
+            line-height: 20px;
+    }
+}

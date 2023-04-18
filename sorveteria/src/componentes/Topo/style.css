@@ -1,0 +1,54 @@
+header{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(255, 230, 88);
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo img{
+    width: auto;
+    height: 60px;
+}
+
+.topo nav{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo nav a{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.topo nav a:hover{
+    color: rgb(54, 54, 54);
+    transform: scale(1.01);
+    transition: 1s;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 622px) {
+    .topo{
+        flex-direction: column;
+    }
+    .topo nav{
+        width: 100%;
+        border-top: solid 1px gray;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+footer{
+    background-color: black;
+}
+
+.rodape{
+    display: flex;
+    color: white;
+    padding: 100px 20px;
+    justify-content: space-between;
+}
+
+.rodape img{
+    width: auto;
+    height: 100px;
+}
+
+.rodape div{
+   width: 20%;
+}
+
+.rodape p{
+    font-size: 16px;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .rodape{
+        align-items: center;
+        flex-direction: column;
+        padding: 80px 0;
+    }
+    .rodape div{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }   
+}

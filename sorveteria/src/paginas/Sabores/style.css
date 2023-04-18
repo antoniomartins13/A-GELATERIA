@@ -1,0 +1,99 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-banner-sabores{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+    background: url("../../../public/assets/banner-sabores.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-banner-sabores div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.secao-banner-sabores h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.cards-sabores{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards-sabores h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+}
+
+.card-sabor{
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px 2px #d9dde1;
+    margin-bottom: 30px;
+}
+.card-sabor img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.card-sabor p{
+    margin: 10px 0px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .secao-banner-sabores h1{
+        font-size: 60px;
+    }
+    .card-sabor{
+        width: 100%;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .secao-banner-sabores h1{
+        font-size: 40px;
+    }
+}
